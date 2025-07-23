@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="ICON.png" sizes="32x32">
   <title>Smart Medicine Dispenser | DREAM</title>
   <style>
     * {
@@ -17,7 +18,6 @@
       scroll-behavior: smooth;
     }
 
-    /* Header */
     header {
       background: #0b1e42;
       padding: 1rem 2rem;
@@ -54,7 +54,6 @@
       font-weight: bold;
     }
 
-    /* Hero section */
     .hero {
       background: linear-gradient(to right, #0b1e42, #6da8cf, #bfe7f9);
       color: white;
@@ -82,7 +81,6 @@
       background: #bfe7f9;
     }
 
-    /* Section general style with animation */
     section {
       padding: 4rem 2rem;
       max-width: 1000px;
@@ -107,7 +105,6 @@
       margin-bottom: 1rem;
     }
 
-    /* Features */
     .features {
       display: flex;
       flex-wrap: wrap;
@@ -122,20 +119,37 @@
       border-radius: 12px;
       min-width: 250px;
     }
-
     img.poster {
       width: 100%;
       border-radius: 10px;
       margin-top: 2rem;
     }
-
     .quote {
       font-style: italic;
       margin-top: 2rem;
       font-size: 1.2rem;
       text-align: center;
     }
-
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .card {
+      flex: 1 1 30%;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: left;
+      transition: transform 0.3s ease;
+      border-top: 6px solid #aee0f8;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
     .team {
       display: flex;
       flex-wrap: wrap;
@@ -143,6 +157,10 @@
       gap: 2rem;
       text-align: center;
       margin-top: 2rem;
+    }
+    .member:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
     }
     .member {
       background: #e3f3ff;
@@ -178,41 +196,37 @@
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <div class="brand">
-      <div>
-        <img src="ICON.png" alt="SMD Logo" />
-      </div>
+      <div><img src="ICON.png" alt="SMD Logo" /></div>
       Smart Medicine Dispenser
     </div>
     <nav>
       <a href="#home">Home</a>
-      <a href="#how">How it Works</a>
-      <a href="#features">Features</a>
+      <a href="#how">Mechanism</a>
+      <a href="#application">Application</a>
+      <a href="#vision">Vision</a>
       <a href="#about">About</a>
     </nav>
   </header>
 
-  <!-- Hero -->
   <section class="hero" id="home">
     <h1>Smart Medicine Dispenser (SMD)</h1>
     <p>Say goodbye to long queues and embrace automation.</p>
     <a href="#how">Learn More</a>
   </section>
 
-  <!-- How it Works -->
   <section id="how">
-    <h2>How it Works</h2>
+    <h2>Mechanism</h2>
+    <h3>Software Key Feature</h3>
     <p>1. The system smartly applies conveyor belt & vending machine to replace the conventional medicine collection process.</p>
-    <p style="margin-top: 0.5rem">2. The kiosk can efficiently manage traditional medication dispensing and payment, reducing the need for manual intervention.</p>
-    <img src="poster.jpg" alt="SMD Poster Illustration" class="poster" />
-  </section>
+    <p>2. The kiosk can efficiently manage traditional medication dispensing and payment, reducing the need for manual intervention.</p>
 
-  <!-- Features -->
-  <section id="features">
-    <h2>Key Features</h2>
+    <h3 style="margin-top: 2rem">Hardware Explanation</h3>
+    <p>A video demonstration will be uploaded soon to showcase the hardware functionality of our SMD prototype in action.</p>
+    <img src="poster.jpg" alt="SMD Poster Illustration" class="poster" />
+
+    <h3 style="margin-top: 3rem;">Key Features</h3>
     <div class="features">
       <div class="feature">
         <h3>Convenient</h3>
@@ -229,16 +243,56 @@
     </div>
   </section>
 
-  <!-- About -->
+  <section id="application">
+    <h2>Application & Cost Efficiency</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Hospitals</h3>
+        <p>Streamlines prescription dispensing, allowing nurses to focus on patient care.</p>
+      </div>
+      <div class="card">
+        <h3>Clinics</h3>
+        <p>Reduces workload for general practitioners and simplifies medicine handover.</p>
+      </div>
+      <div class="card">
+        <h3>Large Pharmacies</h3>
+        <p>Enables 24/7 operation, reduces waiting time, and improves customer satisfaction.</p>
+      </div>
+    </div>
+    <h3 style="margin-top: 2rem;">Cost Efficiency</h3>
+    <p>
+      While the initial investment in smart dispensing machines may be higher than traditional systems,
+      the long-term savings from <strong>reduced manpower, minimized errors, and automated 24/7 operation</strong> make it highly cost-effective.
+    </p>
+    <p style="margin-top: 1rem;">
+      If implemented efficiently, the total operational cost could even be <strong>lower than current manual systems</strong>, making it a win-win solution for both providers and patients.
+    </p>
+  </section>
+
+  <section id="vision">
+    <h2>Our Vision</h2>
+    <p>In the future, we hope that the SMD will not only function as an automated medication dispenser but also integrate seamlessly with hospital-wide digital systems, driving the healthcare industry toward intelligence and automation.</p>
+    <h3>Diverse Payment Options</h3>
+    <p>Supports multiple payment methods, including e-wallets, credit cards, and mobile payments, enhancing patient convenience and reducing the complexity of cash transactions.</p>
+    <p>Eliminates the need for manual billing, further reducing the workload of nurses and pharmacy staff.</p>
+    <h3>Expanded Scope of Application</h3>
+    <p>Future iterations will not be limited to solid medications but will support liquid drugs, special medications, and even customized prescriptions.</p>
+    <p>Advanced refrigeration and temperature control technologies will ensure safe storage and precise dispensing of medications.</p>
+    <h3>Hospital Automation Workflow</h3>
+    <p>Seamless integration with Hospital Information Systems (HIS) and Electronic Medical Records (EMR), enabling an end-to-end process from prescription issuance → automatic dispensing → patient pickup via QR code.</p>
+    <p>AI and big data analytics will optimize inventory management, reduce waste, and ensure a stable medication supply.</p>
+    <h3>Smart Healthcare Ecosystem</h3>
+    <p>The Intelligent Medication Pickup System will become a key component of hospital automation, allowing medical staff to focus on higher-value healthcare services.</p>
+    <p>Patients will enjoy faster, more accurate, and more convenient medication retrieval experiences, enhancing overall service quality and efficiency in the medical industry.</p>
+    <p>Through these upgrades, the Intelligent Medication Pickup System will play a crucial role in hospital automation, driving the healthcare industry towards a smarter and more efficient future.</p>
+  </section>
+
   <section id="about">
     <h2>About DREAM</h2>
     <p class="quote">It is our vision & mission to enhance your medication experience.</p>
     <p style="text-align: center; margin-top: 1rem; font-family: cursive; font-size: 1.5rem;">-- Dream</p>
-  </section>
 
-  <!-- Team Section -->
-  <section id="team">
-    <h2>Our Team</h2>
+    <h2 style="margin-top: 3rem;">Our Team</h2>
     <div class="team">
       <div class="member">
         <img src="2.jpg" alt="WONG ZHI YING" />
@@ -258,10 +312,8 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     &copy; 2025 DREAM Team. All rights reserved.
   </footer>
-
 </body>
 </html>
