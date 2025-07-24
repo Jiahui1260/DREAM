@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="ICON.png" sizes="32x32">
-  <title>Smart Medicine Dispenser | DREAM</title>
+  <title>Application | DREAM</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     * {
       margin: 0;
@@ -119,20 +120,17 @@
       border-radius: 12px;
       min-width: 250px;
     }
-
     img.poster {
       width: 100%;
       border-radius: 10px;
       margin-top: 2rem;
     }
-
     .quote {
       font-style: italic;
       margin-top: 2rem;
       font-size: 1.2rem;
       text-align: center;
     }
-
     .card-container {
       display: flex;
       justify-content: space-between;
@@ -153,7 +151,6 @@
     .card:hover {
       transform: translateY(-5px);
     }
-
     .team {
       display: flex;
       flex-wrap: wrap;
@@ -214,17 +211,72 @@
     </nav>
   </header>
 
-  <section class="hero" id="home">
-    <h1>Smart Medicine Dispenser (SMD)</h1>
-    <p>Say goodbye to long queues and embrace automation.</p>
-    <a href="how.html">Learn More</a>
-  </section>
+  <section>
+    <h2>Application & Cost Efficiency</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Hospitals</h3>
+        <p>Streamlines prescription dispensing, allowing nurses to focus on patient care.</p>
+      </div>
+      <div class="card">
+        <h3>Clinics</h3>
+        <p>Reduces workload for general practitioners and simplifies medicine handover.</p>
+      </div>
+      <div class="card">
+        <h3>Large Pharmacies</h3>
+        <p>Enables 24/7 operation, reduces waiting time, and improves customer satisfaction.</p>
+      </div>
+    </div>
 
-  <!-- Poster Section -->
-  <div id="poster" style="display: flex; justify-content: center; margin-top: 3rem;">
-    <img src="poster.jpg" alt="SMD Poster Illustration" class="poster" style="width: calc(100% - 4rem); max-width: 1000px;" />
+  </section>
+<section>
+  <h2>Cost-Effectiveness Overview</h2>
+  <img src="cs1.jpg" alt="Cost-Effectiveness Overview" style="width: 100%; max-width: 800px; display: block; margin: 2rem auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+  <p class="quote" style="margin-top: 2rem;">Despite a higher initial cost, automated systems offer clear long-term advantages in labor savings, 24/7 operation, and user satisfaction — ideal for medium to large facilities.</p>
+</section>
+
+<section>
+  <h2>Data Speaks: Case Studies</h2>
+
+  <div class="card">
+    <h3>Case 1. Operational Cost Gap – Singapore Hospital</h3>
+    <p>
+      Study comparing 3 systems (Manual, LED-guided, LED+Lock-controlled):<br><br>
+      Manual: ~S$60,912/year<br>
+      LED-guided: ~S$129,832/year<br>
+      LED + Lock: ~S$152,894/year<br><br>
+      <strong>Medication Errors Avoided:</strong><br>
+      LED-guided: 365 events<br>
+      LED + Lock: 658 events<br><br>
+      <strong>Cost per avoided error:</strong><br>
+      LED-guided: S$189<br>
+      LED + Lock: S$140<br><br>
+      ≈ US$140–190 per event avoided (depending on facility size).
+    </p>
+    <p style="font-size: 0.85rem;"><em>Sources: tjps.pharm.chula.ac.th, PMC, ResearchGate</em></p>
   </div>
 
+  <div class="card" style="margin-top: 2rem;">
+    <h3>Case 2. 5-Year Cost Comparison – Canadian Report</h3>
+    <p>
+      Based on a CADTH report over 5 years:<br><br>
+      Automated System: $816k–$840k<br>
+      Manual System: $968k<br>
+      ➤ Savings: $128k–$152k (13–16%)<br><br>
+      <strong>Labor Cost Share:</strong><br>
+      Manual: 68%<br>
+      Automated: 50%<br><br>
+      <strong>Pharmacist/Technician Ratio:</strong><br>
+      Manual: 26%<br>
+      Automated: 13%<br><br>
+      <strong>Equipment Setup:</strong><br>
+      ~20% of total cost (Automated)
+    </p>
+    <p style="font-size: 0.85rem;"><em>Sources: PMC, cda-amc.ca, Canadian Society of Hospital Pharmacists</em></p>
+  </div>
+
+  <p class="quote" style="margin-top: 2rem;"><strong>Conclusion: Although automated systems cost 1.3–2× more upfront, they save 10–20% over five years. Each avoided error saves ~US$100–200.</strong></p>
+</section>
   <footer>
     &copy; 2025 DREAM Team. All rights reserved.
   </footer>

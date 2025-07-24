@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="ICON.png" sizes="32x32">
-  <title>Smart Medicine Dispenser | DREAM</title>
+  <title>Vision | DREAM</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     * {
       margin: 0;
@@ -16,6 +17,7 @@
       background: #f9faff;
       color: #333;
       scroll-behavior: smooth;
+      line-height: 1.6;
     }
 
     header {
@@ -89,9 +91,6 @@
       transform: translateY(30px);
       animation: fadeIn 1s ease-out forwards;
     }
-    section:nth-of-type(2) { animation-delay: 0.3s; }
-    section:nth-of-type(3) { animation-delay: 0.6s; }
-    section:nth-of-type(4) { animation-delay: 0.9s; }
 
     @keyframes fadeIn {
       to {
@@ -100,94 +99,13 @@
       }
     }
 
-    h1, h2 {
+    h1, h2, h3 {
       color: #0b1e42;
       margin-bottom: 1rem;
     }
 
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .feature {
-      flex: 1;
-      background: #bfe7f9;
-      padding: 1.5rem;
-      border-radius: 12px;
-      min-width: 250px;
-    }
-
-    img.poster {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 2rem;
-    }
-
-    .quote {
-      font-style: italic;
-      margin-top: 2rem;
-      font-size: 1.2rem;
-      text-align: center;
-    }
-
-    .card-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-    .card {
-      flex: 1 1 30%;
-      background-color: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 1.5rem;
-      text-align: left;
-      transition: transform 0.3s ease;
-      border-top: 6px solid #aee0f8;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .team {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .member:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
-    }
-    .member {
-      background: #e3f3ff;
-      padding: 1.5rem;
-      border-radius: 12px;
-      width: 220px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .member img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      border: 3px solid #bfe7f9;
-    }
-    .member h3 {
-      margin: 0.5rem 0 0.2rem;
-      color: #0b1e42;
-    }
-    .member p {
-      font-size: 0.9rem;
-      color: #333;
+    p {
+      margin-bottom: 1.2rem;
     }
 
     footer {
@@ -214,16 +132,28 @@
     </nav>
   </header>
 
-  <section class="hero" id="home">
-    <h1>Smart Medicine Dispenser (SMD)</h1>
-    <p>Say goodbye to long queues and embrace automation.</p>
-    <a href="how.html">Learn More</a>
-  </section>
+  <section>
+    <h2>Our Vision</h2>
+    <p>In the future, we hope that the SMD will not only function as an automated medication dispenser but also integrate seamlessly with hospital-wide digital systems, driving the healthcare industry toward intelligence and automation.</p>
 
-  <!-- Poster Section -->
-  <div id="poster" style="display: flex; justify-content: center; margin-top: 3rem;">
-    <img src="poster.jpg" alt="SMD Poster Illustration" class="poster" style="width: calc(100% - 4rem); max-width: 1000px;" />
-  </div>
+    <h3>Diverse Payment Options</h3>
+    <p>Supports multiple payment methods, including e-wallets, credit cards, and mobile payments, enhancing patient convenience and reducing the complexity of cash transactions.</p>
+    <p>Eliminates the need for manual billing, further reducing the workload of nurses and pharmacy staff.</p>
+
+    <h3>Expanded Scope of Application</h3>
+    <p>Future iterations will not be limited to solid medications but will support liquid drugs, special medications, and even customized prescriptions.</p>
+    <p>Advanced refrigeration and temperature control technologies will ensure safe storage and precise dispensing of medications.</p>
+
+    <h3>Hospital Automation Workflow</h3>
+    <p>Seamless integration with Hospital Information Systems (HIS) and Electronic Medical Records (EMR), enabling an end-to-end process from prescription issuance → automatic dispensing → patient pickup via QR code.</p>
+    <p>AI and big data analytics will optimize inventory management, reduce waste, and ensure a stable medication supply.</p>
+
+    <h3>Smart Healthcare Ecosystem</h3>
+    <p>The Intelligent Medication Pickup System will become a key component of hospital automation, allowing medical staff to focus on higher-value healthcare services.</p>
+
+    <h3>Global Outreach & Collaboration</h3>
+    <p>We aspire to expand the reach of our Smart Medicine Dispenser system worldwide and engage in international academic collaboration. Together, we can refine and advance automated medication systems across borders.</p>
+  </section>
 
   <footer>
     &copy; 2025 DREAM Team. All rights reserved.
